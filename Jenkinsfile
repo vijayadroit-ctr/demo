@@ -9,6 +9,10 @@ pipeline {
             steps{
                 git branch:'main', url:'https://github.com/vijayadroit-ctr/demo.git'
             }
+        }stage('Compile'){
+            steps{
+                bat 'mvn compile'
+            }
         }
     }
 }
