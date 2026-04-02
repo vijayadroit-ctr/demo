@@ -6,7 +6,9 @@ pipeline {
     }
     stages{
         stage('Checkout code'){
+            steps{
                 git branch:'main', url:'https://github.com/vijayadroit-ctr/demo.git'
+            }
         }
     }
 }
