@@ -36,5 +36,11 @@ pipeline {
                 bat 'jar tf target/demo-1.0-SNAPSHOT.jar'
             }
         }
+        stage('Deploy'){
+            steps{
+                bat 'if not exist C:deployments1 mkdir C:\\deployments1'
+                bat 'copy target \\demo-1.0-SNAPSHOT.jar  C:\\deployments1'
+            }
+        }
     }
 }
