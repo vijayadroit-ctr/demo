@@ -30,5 +30,11 @@ pipeline {
                 bat 'mvn package'
             }
         }
+        stage('Release(Artifact check)'){
+            steps{
+                bat 'dir target'
+                bat 'jar tf target/demo-1.0-SNAPSHOT.jar'
+            }
+        }
     }
 }
