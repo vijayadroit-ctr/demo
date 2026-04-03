@@ -45,10 +45,10 @@ pipeline {
 
         }
 
-        // stage('Run Application'){
-        //     steps{
-        //         bat 'java -cp C:\\deployments1\\demo-1.0-SNAPSHOT.jar com.example.Main'
-        //     }
-        // }
+        stage('Run Application'){
+            steps{
+                bat 'java -cp C:\\deployments1\\demo-1.0-SNAPSHOT.jar com.example.Main'
+            }
+        }
     }
 }
