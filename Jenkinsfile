@@ -44,7 +44,7 @@ pipeline {
         }
         stage('Run Application'){
             steps{
-                bat 'java -jar ' C:\\deployments1\\demo-1.0-SNAPSHOT.jar
+                bat 'java -jar C:\\deployments1\\demo-1.0-SNAPSHOT.jar'
             }
         }
     }
