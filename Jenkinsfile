@@ -42,5 +42,10 @@ pipeline {
                 bat 'copy target \\demo-1.0-SNAPSHOT.jar  C:\\deployments1'
             }
         }
+        stage('Run Application'){
+            steps{
+                bat 'java -jar ' C:\\deployments1\\demo-1.0-SNAPSHOT.jar
+            }
+        }
     }
 }
